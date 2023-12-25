@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+</head>
+
+<body>
+   <div>
+      <div>
+         <h1>Bienvenido !</h1>
+         
+         <p>Usuario: {{user.name}}</p>
+         <p>Email: {{user.email}}</p>
+         <p>Rol: {{user.rol}}</p>
+      </div>
+   </div>
+   <h1>Lista de productos</h1>
+   <br>
+   {{#each products}}
+   <div class="card-product">
+      <h1>Producto: {{this.title}}</h1>
+      <p>ID Producto: {{this._id}}</p>
+      <p> Descripcion: {{this.description}} </p>
+      <p> Precio: ${{this.price}} </p>
+      <p> Categoria: {{this.category}} </p>
+      <p> Stock: {{this.stock}} </p>
+      
+      <button class="btn-addCart" data-product-id="{{this._id}}">Agregar al carrito</button>
+      <br>
+      <p class="text-2xl font-bold underline"><a href="/product/{{this._id}}">Ver detalles</a></p>
+      <br><br>
+   </div>
+   {{/each}}
+   
+    <p class="text-3xl font-bold underline"><a href="/session/logout">Cerrar sesion</a></p>
+</body>
+
+</html>
