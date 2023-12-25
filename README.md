@@ -4,7 +4,6 @@
 
 A continuación, se muestran las dependencias utilizadas en este proyecto:
 
-```shell
     "bcrypt": "^5.1.1",
     "chalk": "^5.3.0",
     "connect-mongo": "^5.1.0",
@@ -28,14 +27,12 @@ A continuación, se muestran las dependencias utilizadas en este proyecto:
 ```
  Navega hasta el directorio del proyecto.
 
-```shell
 src/app.js
 ```
-3. Instalar las dependencias para el servidor.
-```shell
+ Instala las dependencias para el servidor.
+
 npm i express 
 npm i //dependencias
-```
 
 
 ### 🌐 Servidor:
@@ -45,9 +42,8 @@ Se levanta el servidor con *Express js* con el puerto:
 #### `http://localhost:8080`
 
 Para iniciar la aplicación, ejecuta el siguiente comando:
-```shell
+
 nodemon app.js
-```
 
 ### 📖 Práctica Integradora #2
 
@@ -70,7 +66,7 @@ role:String(default:’user’)
 3. Modificar el sistema de login del usuario para poder trabajar con session o con jwt (a tu elección). 
 (Sólo para jwt) desarrollar una estrategia “current” para extraer la cookie que contiene el token para obtener el usuario asociado a dicho token, en caso de tener el token, devolver al usuario asociado al token, caso contrario devolver un error de passport, utilizar un extractor de cookie.
 
-## 📱 Tegnologías
+## 📱 Tecnologías
 
 
 
